@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Moderustic:wght@300..800&display=swap');
+
+*{
+  font-family: "Moderustic", sans-serif;
+  margin: 0 auto;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  font-size: 48px;
+  color: #000000;
 }
+.todo_form{
+padding-top: 30px;
+padding-bottom: 30px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filter-controls{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  width: 40%;
+}
+ button{
+  border: none;
+  
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+button:hover{
+  background-color: #555555;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.todo-row, .todo-row complete{
+  display: flex;
+  background-color: #555555;
+  color: white;
+  padding: 15px;
+  width: 40%;
+  border-radius: 10px;
+
+
+}
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none; 
+  border-bottom: 2px solid #555555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icons{
+display: flex;
+flex-direction: row;
+gap: 10px;
+width: 20%;
+}
+
+.todo-container{
+display: flex;
+flex-direction: column;
+gap: 15px;
+padding-top: 10px;
+}
+
+.App {
+  text-align: center;
 }
